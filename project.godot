@@ -16,5 +16,4 @@ _global_script_class_icons={
 [application]
 
 config/name="EscapeFromSpace"
-run/main_scene="res://World/World.tscn"
 config/icon="res://icon.png"
