@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Knight.png-deb2d62379d3f9d42bd6a576a7108838.stex"
+path="res://.import/EscapeFromSpaceLogo.png-a4368384984a0bb4acdd9a8f843569a1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Knight.png"
-dest_files=[ "res://.import/Knight.png-deb2d62379d3f9d42bd6a576a7108838.stex" ]
+source_file="res://UI/EscapeFromSpaceLogo.png"
+dest_files=[ "res://.import/EscapeFromSpaceLogo.png-a4368384984a0bb4acdd9a8f843569a1.stex" ]
 
 [params]
 

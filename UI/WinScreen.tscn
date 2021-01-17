@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/montserrat_20.tres" type="DynamicFont" id=1]
+[ext_resource path="res://UI/WinScreen.gd" type="Script" id=2]
+
+[node name="WinScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="WinLabel" type="Label" parent="."]
+anchor_left = -0.0031991
+anchor_top = 0.00221924
+anchor_right = 0.996801
+anchor_bottom = 1.00222
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.333333, 0.027451, 0.027451, 1 )
+text = "You Win"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CreditsLabel" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 197.0
+margin_right = -2.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.145098, 0.0666667, 0.431373, 1 )
+text = "A Game by Mateen and Ahmed"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

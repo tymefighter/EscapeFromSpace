@@ -8,7 +8,7 @@
 [ext_resource path="res://Player/PlayerFront/FrontHead.png" type="Texture" id=6]
 [ext_resource path="res://Player/PlayerFront/FrontLeftLeg.png" type="Texture" id=7]
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "FrontVertical"
 length = 2.0
 loop = true
@@ -86,8 +86,7 @@ tracks/5/keys = {
 "values": [ 0.453738, 0.453738, 0.453738, 0.453738, 0.453738 ]
 }
 
-[sub_resource type="Animation" id=1]
-resource_name = "Idle"
+[sub_resource type="Animation" id=2]
 length = 0.001
 loop = true
 step = 1.0
@@ -193,35 +192,30 @@ bones = [ NodePath("Chest"), PoolRealArray( 0, 0, 0, 0, 0 ), NodePath("Chest/Hip
 
 [node name="Chest" type="Bone2D" parent="Skeleton2D"]
 rotation = -1.58689
-scale = Vector2( 1, 1 )
 rest = Transform2D( -0.0160953, -0.99987, 0.99987, -0.0160953, 0, 0 )
 default_length = 29.0
 
 [node name="Hip" type="Bone2D" parent="Skeleton2D/Chest"]
 position = Vector2( -40.9947, -0.659909 )
 rotation = 3.13402
-scale = Vector2( 1, 1 )
 rest = Transform2D( -0.999971, 0.00756885, -0.00756885, -0.999971, -40.9947, -0.659909 )
 default_length = 4.0
 
 [node name="LegL" type="Bone2D" parent="Skeleton2D/Chest/Hip"]
 position = Vector2( -2.79208, -51.0804 )
 rotation = -0.328764
-scale = Vector2( 1, 1 )
 rest = Transform2D( 0.946442, -0.322873, 0.322873, 0.946442, -2.79208, -51.0804 )
 default_length = 37.0
 
 [node name="LegR" type="Bone2D" parent="Skeleton2D/Chest/Hip"]
 position = Vector2( -5.11103, 46.8922 )
 rotation = 0.184186
-scale = Vector2( 1, 1 )
 rest = Transform2D( 0.983086, 0.183146, -0.183146, 0.983086, -5.11103, 46.8922 )
 default_length = 40.0
 
 [node name="Neck" type="Bone2D" parent="Skeleton2D/Chest"]
 position = Vector2( 28.9962, 0.466765 )
 rotation = 0.00791922
-scale = Vector2( 1, 1 )
 rest = Transform2D( 0.999969, 0.00791914, -0.00791914, 0.999969, 28.9962, 0.466765 )
 default_length = 104.0
 
@@ -234,13 +228,12 @@ default_length = 62.0
 [node name="ArmR" type="Bone2D" parent="Skeleton2D/Chest"]
 position = Vector2( 24.8982, -55.6065 )
 rotation = -2.02254
-scale = Vector2( 1, 1 )
 rest = Transform2D( -0.436536, -0.899687, 0.899687, -0.436536, 24.8982, -55.6065 )
 default_length = 54.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/FrontVertical = SubResource( 2 )
-anims/Idle = SubResource( 1 )
+anims/FrontVertical = SubResource( 1 )
+anims/Idle = SubResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 59 )
