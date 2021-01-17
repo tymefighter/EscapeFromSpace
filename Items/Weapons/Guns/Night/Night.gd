@@ -18,7 +18,7 @@ func _ready():
 	
 func _process(delta):
 	
-	if get_parent().position != prev_parent_position:
+	if get_parent().has_method("get_weapon") and get_parent().position != prev_parent_position:
 		var direction_vector = get_parent().position - prev_parent_position
 		
 		if(abs(direction_vector.x) >= abs(direction_vector.y)):
@@ -37,12 +37,12 @@ func _process(delta):
 			
 			if direction_vector.y <= 0:
 				gun_direction = 'up'
-				position = Vector2(0, -dist_to_gun)
+				position = Vector2(dist_to_gun, -dist_to_gun)
 				get_node("Sprite").rotation_degrees = 270
 				
 			else:
 				gun_direction = 'down'
-				position = Vector2(0, dist_to_gun)
+				position = Vector2(-dist_to_gun, dist_to_gun)
 				get_node("Sprite").rotation_degrees = 90
 				
 		prev_parent_position = get_parent().position
@@ -73,7 +73,7 @@ func shoot(delta):
 	
 		var bullet = bullet_scene.instance()
 		bullet.scale = 0.4 * scale
-		bullet.position = position + get_parent().position
+		bullet.position = 0.3 * position + get_parent().position
 		bullet.velocity = velocity
 		current_scene_root.add_child(bullet)
 		
@@ -85,15 +85,19 @@ func _on_Area2D_body_entered(body):
 	if body.has_method("get_weapon"):
 		if Input.is_key_pressed(KEY_G):
 			
-			# Delete Current Weapon
-			var curr_weapon = body.get_weapon()
+			var self_scale_in_world = scale
+			var self_position_in_world = position
 			
-			if curr_weapon != null:
-				body.remove_child(curr_weapon)
-				curr_weapon.queue_free()
+			var parent_node = get_parent()
+			parent_node.remove_child(self)
 			
-			# Remove Placed Weapon
-			get_parent().remove_child(self)
+			var curr_held_weapon = body.get_weapon()
+			
+			if curr_held_weapon != null:
+				body.remove_child(curr_held_weapon)
+				parent_node.add_child(curr_held_weapon)
+				curr_held_weapon.scale = self_scale_in_world
+				curr_held_weapon.position = self_position_in_world
 			
 			# Add New Weapon
 			body.set_weapon(self)
