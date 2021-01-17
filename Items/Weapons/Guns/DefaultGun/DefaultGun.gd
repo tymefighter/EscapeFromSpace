@@ -6,7 +6,7 @@ var gun_direction = 'right'
 var bullet_scene = \
 	load("res://Items/Weapons/Bullets/DefaultBullet/DefaultBullet.tscn")
 	
-const dist_to_gun = 40
+var dist_to_gun = 40
 const bullet_speed = 500
 const fire_rate = 5 # Bullets Per Second
 const time_gap = 1.0 / fire_rate

@@ -6,7 +6,7 @@ var gun_direction = 'right'
 var bullet_scene = \
 	load("res://Items/Weapons/Bullets/VenomBullet/VenomBullet.tscn")
 	
-const dist_to_gun = 40
+var dist_to_gun = 40
 const bullet_speed = 900
 const fire_rate = 2 # Bullets Per Second
 const time_gap = 1.0 / fire_rate

@@ -5,7 +5,7 @@ const FRICTION = 1000
 const ACCELERATION = 50
 var velocity = Vector2.ZERO
 var weapon = null
-var health = 400
+var health = 1400
 var armour = 0
 
 onready var animationPlayer = get_node("PlayerRight/AnimationPlayer")

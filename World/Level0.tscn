@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://World/WorldItems/space2.png" type="Texture" id=1]
 [ext_resource path="res://World/WorldItems/space1.png" type="Texture" id=2]
@@ -14,6 +14,12 @@
 [ext_resource path="res://Other/bullet.png" type="Texture" id=12]
 [ext_resource path="res://Other/health.png" type="Texture" id=13]
 [ext_resource path="res://Other/Armour.png" type="Texture" id=14]
+[ext_resource path="res://AI/AIOne/AIOne.tscn" type="PackedScene" id=15]
+[ext_resource path="res://AI/AITwo/AITwo.tscn" type="PackedScene" id=16]
+[ext_resource path="res://AI/AIThree/AIThree.tscn" type="PackedScene" id=17]
+[ext_resource path="res://AI/AIFour/AIFour.tscn" type="PackedScene" id=18]
+[ext_resource path="res://AI/AIFive/AIFive.tscn" type="PackedScene" id=19]
+[ext_resource path="res://AI/AISix/AISix.tscn" type="PackedScene" id=20]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -1654,6 +1660,10 @@ scale = Vector2( 0.2, 0.2 )
 position = Vector2( 96.6803, 432.063 )
 scale = Vector2( 0.2, 0.2 )
 
+[node name="AIOne" parent="YSort" instance=ExtResource( 15 )]
+position = Vector2( 562.278, 339.323 )
+scale = Vector2( 0.6, 0.6 )
+
 [node name="Player" parent="YSort" instance=ExtResource( 11 )]
 position = Vector2( 50.3797, 109.481 )
 scale = Vector2( 0.3, 0.3 )
@@ -1712,3 +1722,38 @@ text = "Armour"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AITwo" parent="YSort" instance=ExtResource( 16 )]
+position = Vector2( 148.108, 403.516 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="AIThree" parent="YSort" instance=ExtResource( 17 )]
+position = Vector2( 915.505, 62.4889 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="AIFour" parent="YSort" instance=ExtResource( 18 )]
+position = Vector2( 642.306, 139.422 )
+
+[node name="AIFour2" parent="YSort" instance=ExtResource( 18 )]
+position = Vector2( 298.991, 116.856 )
+
+[node name="AIFive" parent="YSort" instance=ExtResource( 19 )]
+position = Vector2( 887.301, 228.877 )
+
+[node name="AIFive2" parent="YSort" instance=ExtResource( 19 )]
+position = Vector2( 176.896, 76.9639 )
+
+[node name="AIFive3" parent="YSort" instance=ExtResource( 19 )]
+position = Vector2( 887.704, 278.037 )
+
+[node name="AIFive4" parent="YSort" instance=ExtResource( 19 )]
+position = Vector2( 785.757, 497.646 )
+
+[node name="AISix" parent="YSort" instance=ExtResource( 20 )]
+position = Vector2( 272.396, 290.932 )
+
+[node name="AIThree2" parent="YSort" instance=ExtResource( 17 )]
+position = Vector2( 942.103, 444.054 )
+
+[node name="AIFour3" parent="YSort" instance=ExtResource( 18 )]
+position = Vector2( 461.784, 552.851 )

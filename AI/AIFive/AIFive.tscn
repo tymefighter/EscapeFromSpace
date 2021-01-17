@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://AI/AIFive/Modern Fantasy JRPG Character Sprites (transparent).png" type="Texture" id=1]
 [ext_resource path="res://AI/AIFive/AIFive.gd" type="Script" id=2]
@@ -136,6 +136,13 @@ tracks/0/keys = {
 "values": [ 3, 4, 5, 4 ]
 }
 
+[sub_resource type="CapsuleShape2D" id=9]
+radius = 7.57513
+height = 3.23474
+
+[sub_resource type="CircleShape2D" id=10]
+radius = 110.319
+
 [node name="AIFive" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
@@ -154,3 +161,13 @@ anims/RunDown = SubResource( 5 )
 anims/RunLeft = SubResource( 6 )
 anims/RunRight = SubResource( 7 )
 anims/RunUp = SubResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 6.47114 )
+shape = SubResource( 9 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 10 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

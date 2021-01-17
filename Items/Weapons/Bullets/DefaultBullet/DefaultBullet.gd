@@ -1,6 +1,6 @@
 extends Node2D
 
-var damage = 10
+var damage = 12
 var velocity = Vector2.ZERO
 
 func _ready():
