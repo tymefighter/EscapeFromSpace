@@ -25,6 +25,9 @@ func _process(delta):
 	var armour_label = get_node("ArmourLabel")
 	if armour_label != null:
 		armour_label.text = str(armour)
+		
+	if health <= 0:
+		get_tree().change_scene("res://UI/LoseScreen.tscn")
 
 func _physics_process(delta):
 
