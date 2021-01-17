@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AI/AIOne/OneBack/BackShadow.png" type="Texture" id=1]
+[ext_resource path="res://AI/AIOne/OneBack/BackBody.png" type="Texture" id=2]
+
+[node name="OneBack" type="Node2D"]
+
+[node name="Polygons" type="Node2D" parent="."]
+
+[node name="Shadow" type="Polygon2D" parent="Polygons"]
+position = Vector2( -55.9509, 18.6318 )
+scale = Vector2( 0.457913, 0.457913 )
+texture = ExtResource( 1 )
+polygon = PoolVector2Array( -20.6349, 64.2857, 21.4286, -4.7619, 229.365, -1.5873, 251.587, 62.6984, 231.746, 119.048, 13.4921, 126.984 )
+uv = PoolVector2Array( -20.6349, 64.2857, 21.4286, -4.7619, 229.365, -1.5873, 251.587, 62.6984, 231.746, 119.048, 13.4921, 126.984 )
+
+[node name="Torso" type="Polygon2D" parent="Polygons"]
+position = Vector2( -0.935211, -0.689163 )
+scale = Vector2( 0.535283, 0.535283 )
+offset = Vector2( -116.225, -110.076 )
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( 22.2222, 34.127, 118.254, -11.1111, 207.936, 30.1587, 246.032, 200.794, 114.286, 227.778, -16.6667, 184.127 )
+uv = PoolVector2Array( 22.2222, 34.127, 118.254, -11.1111, 207.936, 30.1587, 246.032, 200.794, 114.286, 227.778, -16.6667, 184.127 )

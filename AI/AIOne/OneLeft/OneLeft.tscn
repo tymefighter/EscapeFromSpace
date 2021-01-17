@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://AI/AIOne/OneLeft/LeftBody.png" type="Texture" id=1]
+[ext_resource path="res://AI/AIOne/OneLeft/LeftEye.png" type="Texture" id=2]
+[ext_resource path="res://AI/AIOne/OneLeft/LeftPupil.png" type="Texture" id=3]
+[ext_resource path="res://AI/AIOne/OneLeft/LeftMouth.png" type="Texture" id=4]
+[ext_resource path="res://AI/AIOne/OneLeft/LeftShadow.png" type="Texture" id=5]
+
+[node name="OneLeft" type="Node2D"]
+
+[node name="Polygons" type="Node2D" parent="."]
+
+[node name="Shadow" type="Polygon2D" parent="Polygons"]
+position = Vector2( -50.888, 16.0795 )
+scale = Vector2( 0.444829, 0.444829 )
+texture = ExtResource( 5 )
+polygon = PoolVector2Array( -11.9318, 29.5455, 123.295, -13.0682, 235.227, 26.1364, 236.364, 81.25, 114.773, 139.773, -14.2045, 87.5 )
+uv = PoolVector2Array( -11.9318, 29.5455, 123.295, -13.0682, 235.227, 26.1364, 236.364, 81.25, 114.773, 139.773, -14.2045, 87.5 )
+
+[node name="Torso" type="Polygon2D" parent="Polygons"]
+position = Vector2( -0.251976, -0.482216 )
+scale = Vector2( 0.580314, 0.580314 )
+offset = Vector2( -111.35, -117.253 )
+texture = ExtResource( 1 )
+polygon = PoolVector2Array( 12.5, 36.7647, 108.088, -18.3824, 204.412, 25.7353, 245.588, 194.853, 103.676, 236.029, -16.1765, 187.5 )
+uv = PoolVector2Array( 12.5, 36.7647, 108.088, -18.3824, 204.412, 25.7353, 245.588, 194.853, 103.676, 236.029, -16.1765, 187.5 )
+
+[node name="Eye" type="Polygon2D" parent="Polygons"]
+position = Vector2( -57.1252, -57.6426 )
+scale = Vector2( 0.525764, 0.525764 )
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( 23.4742, 10.0939, 79.3427, -3.75587, 74.4131, 11.2676, 52.1127, 105.634, -1.17371, 101.408 )
+uv = PoolVector2Array( 23.4742, 10.0939, 79.3427, -3.75587, 74.4131, 11.2676, 52.1127, 105.634, -1.17371, 101.408 )
+
+[node name="Pupil" type="Polygon2D" parent="Polygons"]
+position = Vector2( -54.7117, -44.6909 )
+scale = Vector2( 0.487602, 0.487602 )
+texture = ExtResource( 3 )
+polygon = PoolVector2Array( 16.4319, 4.69484, 30.7512, -2.11267, 43.4272, 8.21596, 30.2817, 63.615, 3.75587, 69.0141, -2.11267, 59.8592 )
+uv = PoolVector2Array( 16.4319, 4.69484, 30.7512, -2.11267, 43.4272, 8.21596, 30.2817, 63.615, 3.75587, 69.0141, -2.11267, 59.8592 )
+
+[node name="Mouth" type="Polygon2D" parent="Polygons"]
+position = Vector2( -63.1052, 0.647726 )
+scale = Vector2( 0.517116, 0.517116 )
+texture = ExtResource( 4 )
+polygon = PoolVector2Array( -2.34741, 14.0845, 12.9108, 18.0751, 68.7794, -3.05164, 114.789, 17.8404, 73.4742, 58.4507, -3.28638, 32.8638 )
+uv = PoolVector2Array( -2.34741, 14.0845, 12.9108, 18.0751, 68.7794, -3.05164, 114.789, 17.8404, 73.4742, 58.4507, -3.28638, 32.8638 )
