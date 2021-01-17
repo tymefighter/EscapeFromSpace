@@ -5,6 +5,8 @@ var gun_direction = 'right'
 
 var bullet_scene = \
 	load("res://Items/Weapons/Bullets/DefaultBullet/DefaultBullet.tscn")
+	
+const dist_to_gun = 40
 const bullet_speed = 500
 const fire_rate = 5 # Bullets Per Second
 const time_gap = 1.0 / fire_rate
@@ -24,23 +26,23 @@ func _process(delta):
 			
 			if direction_vector.x >= 0:
 				gun_direction = 'right'
-				position = Vector2(50, 0)
+				position = Vector2(dist_to_gun, 0)
 				get_node("Sprite").flip_h = false
 			else:
 				gun_direction = 'left'
-				position = Vector2(-50, 0)
+				position = Vector2(-dist_to_gun, 0)
 				get_node("Sprite").flip_h = true
 		else:
 			get_node("Sprite").flip_h = false
 			
 			if direction_vector.y <= 0:
 				gun_direction = 'up'
-				position = Vector2(0, -50)
+				position = Vector2(0, -dist_to_gun)
 				get_node("Sprite").rotation_degrees = 270
 				
 			else:
 				gun_direction = 'down'
-				position = Vector2(0, 50)
+				position = Vector2(0, dist_to_gun)
 				get_node("Sprite").rotation_degrees = 90
 				
 		prev_parent_position = get_parent().position
@@ -70,7 +72,8 @@ func shoot(delta):
 	while curr_gap >= time_gap:
 	
 		var bullet = bullet_scene.instance()
-		bullet.position = 2 * position + get_parent().position
+		bullet.scale *= scale
+		bullet.position = position + get_parent().position
 		bullet.velocity = velocity
 		current_scene_root.add_child(bullet)
 		
