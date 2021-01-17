@@ -6,8 +6,25 @@ const ACCELERATION = 50
 var velocity = Vector2.ZERO
 var weapon = null
 var health = 400
+var armour = 0
 
 onready var animationPlayer = get_node("PlayerRight/AnimationPlayer")
+
+func _process(delta):
+	var health_label = get_node("HealthLabel")
+	if health_label != null:
+		health_label.text = str(health)
+		
+	var ammo_label = get_node("AmmoLabel")
+	if ammo_label != null:
+		if weapon != null:
+			ammo_label.text = str(weapon.ammo)
+		else:
+			ammo_label.text = "0"
+			
+	var armour_label = get_node("ArmourLabel")
+	if armour_label != null:
+		armour_label.text = str(armour)
 
 func _physics_process(delta):
 
