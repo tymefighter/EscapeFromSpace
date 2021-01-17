@@ -72,7 +72,7 @@ func shoot(delta):
 	while curr_gap >= time_gap:
 	
 		var bullet = bullet_scene.instance()
-		bullet.scale *= scale
+		bullet.scale = 0.4 * scale
 		bullet.position = position + get_parent().position
 		bullet.velocity = velocity
 		current_scene_root.add_child(bullet)
@@ -98,3 +98,4 @@ func _on_Area2D_body_entered(body):
 			# Add New Weapon
 			body.set_weapon(self)
 			body.add_child(self)
+			scale /= body.scale

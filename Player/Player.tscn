@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/PlayerLeft/PlayerLeft.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player/PlayerFront/PlayerFront.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/PlayerRight/PlayerRight.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Player/PlayerBack/PlayerBack.tscn" type="PackedScene" id=5]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 27.6606
+height = 27.9718
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -22,3 +26,7 @@ scale = Vector2( 0.44, 0.44 )
 
 [node name="PlayerRight" parent="." instance=ExtResource( 4 )]
 scale = Vector2( 0.4, 0.4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 2.02446, -14.7786 )
+shape = SubResource( 1 )
