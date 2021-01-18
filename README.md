@@ -8,13 +8,26 @@ while eliminating the aliens to finally escape the spaceship
 
 - This is the player:
 
-![image](./GithubImages/Player.png)
+<img src="./GithubImages/Player.png" width="200">
 
 - These are the playable weapons:
 
-![image](./GithubImages/Guns.png)
+<img src="./GithubImages/Guns.png" width="500">
 
-- These are the aliens:
+- These are the enemies:
+
+<p align="left">
+<img src="./GithubImages/alien1.png" width="100" height="100">
+<img src="./GithubImages/alien2.png" width="100" height="100">
+<img src="./GithubImages/alien3.png" width="100" height="100">
+
+</br>
+<img src="./GithubImages/boss1.png" width="100" height="100">
+<img src="./GithubImages/boss2.png" width="100" height="100">
+<img src="./GithubImages/boss3.png" width="100" height="100">
+</br>
+
+</p>
 
 - Following are some gameplay GIFs:
 
