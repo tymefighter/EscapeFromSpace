@@ -13,10 +13,10 @@ onready var animationPlayer = get_node("TwoFront/AnimationPlayer")
 
 func _ready():
 	weapon.update_pos_parent(
-		Vector2(70, 3),
-		Vector2(-70, 3),
-		Vector2(70, 3),
-		Vector2(-70, 3)
+		Vector2(100, 10),
+		Vector2(-100, 10),
+		Vector2(100, 10),
+		Vector2(-100, 10)
 	)
 
 func _process(delta):
