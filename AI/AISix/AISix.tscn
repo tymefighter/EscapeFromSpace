@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://AI/AISix/rpgcritter.png" type="Texture" id=1]
 [ext_resource path="res://AI/AISix/AISix.gd" type="Script" id=2]
+[ext_resource path="res://Items/Weapons/Guns/Rage/Rage.tscn" type="PackedScene" id=3]
 
 [sub_resource type="Animation" id=1]
 resource_name = "IdleDown"
@@ -137,7 +138,7 @@ tracks/0/keys = {
 radius = 17.6264
 
 [sub_resource type="CircleShape2D" id=10]
-radius = 119.574
+radius = 142.399
 
 [node name="AISix" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -167,4 +168,8 @@ shape = SubResource( 9 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 10 )
+
+[node name="Weapon" parent="." instance=ExtResource( 3 )]
+position = Vector2( 42.583, -0.302017 )
+scale = Vector2( 0.5, 0.5 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
