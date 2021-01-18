@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/BackButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://UI/StorylineScreen.gd" type="Script" id=2]
+
+[node name="StorylineScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0392157, 0.0352941, 0.0352941, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.498436
+anchor_top = 0.498697
+anchor_right = 0.498436
+anchor_bottom = 0.498697
+margin_left = -240.519
+margin_top = -117.218
+margin_right = 242.481
+margin_bottom = 82.782
+custom_colors/font_color = Color( 0.526914, 0.157531, 0.0111398, 1 )
+text = "You are a stranded astronaut and aliens have kidnapped you,
+now it's your task to escape the spaceship.
+You might wonder how, since you are under-powered.
+But the aliens are not perfect as humans, it's up to you to find those
+inabilities and exploit them.  
+Fight your way through and kill the Alien overlord and his cyborg to escape. 
+You may choose to sneak through a few Alien soldiers, 
+but you might miss some bonuses."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" parent="." instance=ExtResource( 1 )]
+margin_left = 10.5566
+margin_top = 260.787
+margin_right = 426.557
+margin_bottom = 280.787
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
