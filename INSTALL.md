@@ -5,8 +5,8 @@ the game for a `Windows` system, a `MAC OSX` system and a
 `Linux` system.
 
 - Windows: `EscapeFromSpace.exe`
-- MAC: `EscapeFromSpace.zip`
-- Linux: `EscapeFromSpace.x86_64`
+- MAC: `EscapeFromSpace.zip` (Currently not working)
+- Linux: `EscapeFromSpace.x86_64` (Has not been completely tested)
 
 If you are on a windows machine, please run the game in the
 same directory (i.e. do not copy the exe file at another
