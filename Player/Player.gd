@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
 # Player Constants
-const MAX_SPEED = 200
+const MAX_SPEED = 150
 const FRICTION = 1000
-const ACCELERATION = 50
+const ACCELERATION = 30
 
 # Player Variables
 var velocity = Vector2.ZERO

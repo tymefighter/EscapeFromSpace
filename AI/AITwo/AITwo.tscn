@@ -8,7 +8,7 @@
 [ext_resource path="res://Items/Weapons/Guns/Night/Night.tscn" type="PackedScene" id=6]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 72.7757
+radius = 65.3569
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 539.003
