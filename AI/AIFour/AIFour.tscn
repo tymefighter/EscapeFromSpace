@@ -176,4 +176,5 @@ shape = SubResource( 10 )
 [node name="Weapon" parent="." instance=ExtResource( 3 )]
 position = Vector2( 22.3026, 2.49009 )
 scale = Vector2( 0.2, 0.3 )
+initial_ammo = 1000000000
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
