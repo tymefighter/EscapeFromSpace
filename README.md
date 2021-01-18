@@ -31,6 +31,13 @@ while eliminating the aliens to finally escape the spaceship
 
 - Following are some gameplay GIFs:
 
+<img src="./GithubImages/StartMenu.gif" width="500">
+<img src="./GithubImages/BasicControls.gif" width="500">
+<img src="./GithubImages/PickingWeapon.gif" width="500">
+<img src="./GithubImages/FightingEnemy.gif" width="500">
+<img src="./GithubImages/Lose.gif" width="500">
+<img src="./GithubImages/Win.gif" width="500">
+
 # Repository Information
 
 ## Installation Instructions
