@@ -1,12 +1,16 @@
 # Installation for Gaming
 
-In the `Executables` directory of this repository, you can find
-executables for a `Windows` system, a `MAC OSX` system and a
+In the current directory of this repository, you can find
+the game for a `Windows` system, a `MAC OSX` system and a
 `Linux` system.
 
 - Windows: `EscapeFromSpace.exe`
-- MAC: `EscapeFromSpace.dmg`
-- Linux: `EscapeFromSpace`
+- MAC: `EscapeFromSpace.zip`
+- Linux: `EscapeFromSpace.x86_64`
+
+If you are on a windows machine, please run the game in the
+same directory (i.e. do not copy the exe file at another
+place)
 
 # Installation for Developing
 
