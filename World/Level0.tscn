@@ -1583,40 +1583,40 @@ tile_data = PoolIntArray( 786459, 3, 0, 851981, 1, 0, 851982, 0, 0, 851983, 1, 0
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Strike1" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 433.067, 51.6603 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 432.875, 51.6603 )
+scale = Vector2( 0.25, 0.25 )
 
 [node name="Strike2" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 627.408, 51.6603 )
-scale = Vector2( 0.2, 0.2 )
+scale = Vector2( 0.25, 0.25 )
 
 [node name="Strike3" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 498.986, 563.3 )
-scale = Vector2( 0.2, 0.2 )
+scale = Vector2( 0.25, 0.25 )
 
 [node name="Epsilon1" parent="YSort" instance=ExtResource( 5 )]
 position = Vector2( 753.701, 82.9862 )
-scale = Vector2( 0.24, 0.24 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="Epsilon2" parent="YSort" instance=ExtResource( 5 )]
 position = Vector2( 495.126, 486.014 )
-scale = Vector2( 0.24, 0.24 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="Epsilon3" parent="YSort" instance=ExtResource( 5 )]
 position = Vector2( 463.885, 368.064 )
-scale = Vector2( 0.24, 0.24 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="Rage1" parent="YSort" instance=ExtResource( 6 )]
 position = Vector2( 626.793, 194.001 )
-scale = Vector2( 0.22, 0.22 )
+scale = Vector2( 0.27, 0.27 )
 
 [node name="Rage2" parent="YSort" instance=ExtResource( 6 )]
 position = Vector2( 99.0502, 291.341 )
-scale = Vector2( 0.22, 0.22 )
+scale = Vector2( 0.27, 0.27 )
 
 [node name="Longshot1" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 965.332, 62.377 )
-scale = Vector2( 0.2, 0.2 )
+scale = Vector2( 0.25, 0.25 )
 
 [node name="Longshot2" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 275.062, 561.722 )
@@ -1624,46 +1624,46 @@ scale = Vector2( 0.2, 0.2 )
 
 [node name="Night1" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 919.992, 255.279 )
-scale = Vector2( 0.22, 0.22 )
+scale = Vector2( 0.3, 0.4 )
 
 [node name="Night2" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 708.232, 472.162 )
-scale = Vector2( 0.22, 0.22 )
+scale = Vector2( 0.3, 0.4 )
 
 [node name="Night3" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 92.078, 550.719 )
-scale = Vector2( 0.22, 0.22 )
+scale = Vector2( 0.3, 0.4 )
 
 [node name="Night4" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 462.184, 272.421 )
-scale = Vector2( 0.22, 0.22 )
+scale = Vector2( 0.3, 0.4 )
 
 [node name="Venom1" parent="YSort" instance=ExtResource( 9 )]
 position = Vector2( 943.624, 407.237 )
-scale = Vector2( 0.22, 0.22 )
+scale = Vector2( 0.3, 0.4 )
 
 [node name="Venom2" parent="YSort" instance=ExtResource( 9 )]
 position = Vector2( 352.061, 292.135 )
-scale = Vector2( 0.22, 0.22 )
+scale = Vector2( 0.3, 0.4 )
 
 [node name="DefaultGun1" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 304.39, 79.456 )
-scale = Vector2( 0.2, 0.2 )
+scale = Vector2( 0.25, 0.25 )
 
 [node name="DefaultGun4" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 51.3671, 51.7922 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 51.1754, 51.7922 )
+scale = Vector2( 0.25, 0.25 )
 
 [node name="DefaultGun2" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 862.823, 507.075 )
-scale = Vector2( 0.2, 0.2 )
+scale = Vector2( 0.25, 0.25 )
 
 [node name="DefaultGun3" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 96.6803, 432.063 )
-scale = Vector2( 0.2, 0.2 )
+scale = Vector2( 0.25, 0.25 )
 
 [node name="AIOne" parent="YSort" instance=ExtResource( 15 )]
-position = Vector2( 562.278, 339.323 )
+position = Vector2( 562.278, 338.998 )
 scale = Vector2( 0.6, 0.6 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 11 )]
@@ -1730,14 +1730,14 @@ position = Vector2( 148.108, 403.516 )
 scale = Vector2( 0.3, 0.3 )
 
 [node name="AIThree" parent="YSort" instance=ExtResource( 17 )]
-position = Vector2( 915.505, 62.4889 )
-scale = Vector2( 0.8, 0.8 )
+position = Vector2( 891.92, 61.9137 )
+scale = Vector2( 0.6, 0.6 )
 
 [node name="AIFour" parent="YSort" instance=ExtResource( 18 )]
 position = Vector2( 642.306, 139.422 )
 
 [node name="AIFour2" parent="YSort" instance=ExtResource( 18 )]
-position = Vector2( 298.991, 116.856 )
+position = Vector2( 298.799, 116.856 )
 
 [node name="AIFive" parent="YSort" instance=ExtResource( 19 )]
 position = Vector2( 887.301, 228.877 )
@@ -1756,6 +1756,7 @@ position = Vector2( 272.396, 290.932 )
 
 [node name="AIThree2" parent="YSort" instance=ExtResource( 17 )]
 position = Vector2( 942.103, 444.054 )
+scale = Vector2( 0.6, 0.6 )
 
 [node name="AIFour3" parent="YSort" instance=ExtResource( 18 )]
 position = Vector2( 461.784, 552.851 )

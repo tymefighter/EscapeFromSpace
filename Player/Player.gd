@@ -1,13 +1,17 @@
 extends KinematicBody2D
 
+# Player Constants
 const MAX_SPEED = 200
 const FRICTION = 1000
 const ACCELERATION = 50
+
+# Player Variables
 var velocity = Vector2.ZERO
 var weapon = null
 var health = 1400
 var armour = 0
 
+# Animation player variable
 onready var animationPlayer = get_node("PlayerRight/AnimationPlayer")
 
 func _process(delta):
@@ -49,31 +53,39 @@ func _physics_process(delta):
 		if(input_vector.y < 0):
 			animationPlayer = get_node("PlayerBack/AnimationPlayer")
 			animationPlayer.play("BackVertical")
+			
 			get_node("PlayerRight").hide()
 			get_node("PlayerFront").hide()
 			get_node("PlayerLeft").hide()
 			get_node("PlayerBack").show()
+			
 		elif(input_vector.y > 0):
 			animationPlayer = get_node("PlayerFront/AnimationPlayer")
 			animationPlayer.play("FrontVertical")
+			
 			get_node("PlayerRight").hide()
 			get_node("PlayerLeft").hide()
 			get_node("PlayerBack").hide()
 			get_node("PlayerFront").show()
+			
 		elif(input_vector.x > 0):
 			animationPlayer = get_node("PlayerRight/AnimationPlayer")
 			animationPlayer.play("RightHorizontal")
+			
 			get_node("PlayerFront").hide()
 			get_node("PlayerLeft").hide()
 			get_node("PlayerBack").hide()
 			get_node("PlayerRight").show()
+			
 		elif(input_vector.x < 0):
 			animationPlayer = get_node("PlayerLeft/AnimationPlayer")
 			animationPlayer.play("LeftHorizontal")
+			
 			get_node("PlayerFront").hide()
 			get_node("PlayerBack").hide()
 			get_node("PlayerRight").hide()
 			get_node("PlayerLeft").show()
+			
 		velocity += input_vector * ACCELERATION
 		velocity = velocity.clamped(MAX_SPEED)
 		
