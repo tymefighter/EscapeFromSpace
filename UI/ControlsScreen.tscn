@@ -23,12 +23,12 @@ __meta__ = {
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.501303
 anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -249.609
+anchor_bottom = 0.501303
+margin_left = -250.391
 margin_top = -76.347
-margin_right = 250.391
+margin_right = 249.609
 margin_bottom = 39.653
 custom_colors/font_color = Color( 0.45098, 0.0705882, 0.258824, 1 )
 text = "Move Up W
@@ -36,7 +36,7 @@ Move Down S
 Move Right D
 Move Left A
 Pick Weapon G
-Shoot P
+Shoot Enter
 "
 align = 1
 valign = 1

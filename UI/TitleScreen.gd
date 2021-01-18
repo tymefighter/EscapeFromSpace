@@ -11,3 +11,6 @@ func _on_ControlsButton_pressed():
 
 func _on_QuitButton_pressed():
 	get_tree().quit()
+
+func _on_StorylineButton_pressed():
+	get_tree().change_scene("res://UI/StorylineScreen.tscn")

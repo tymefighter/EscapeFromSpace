@@ -35,7 +35,7 @@ func _process(delta):
 
 func _physics_process(delta):
 
-	if Input.is_key_pressed(KEY_P) and weapon != null:
+	if Input.is_key_pressed(KEY_ENTER) and weapon != null:
 		weapon.shoot(delta)
 
 	var input_vector = Vector2.ZERO
