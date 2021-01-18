@@ -1,10 +1,13 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/PlayerLeft/PlayerLeft.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player/PlayerFront/PlayerFront.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/PlayerRight/PlayerRight.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Player/PlayerBack/PlayerBack.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Other/Armour.png" type="Texture" id=6]
+[ext_resource path="res://Other/health.png" type="Texture" id=7]
+[ext_resource path="res://Other/bullet.png" type="Texture" id=8]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 27.6606
@@ -30,3 +33,54 @@ scale = Vector2( 0.4, 0.4 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 2.02446, -14.7786 )
 shape = SubResource( 1 )
+
+[node name="HealthSprite" type="Sprite" parent="."]
+position = Vector2( -629.776, -449.284 )
+scale = Vector2( 2.957, 2.595 )
+texture = ExtResource( 7 )
+
+[node name="HealthLabel" type="Label" parent="."]
+margin_left = -593.189
+margin_top = -464.13
+margin_right = -553.189
+margin_bottom = -450.13
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0, 0.894118, 0.556863, 1 )
+text = "Health"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArmourSprite" type="Sprite" parent="."]
+position = Vector2( -458.161, -434.129 )
+scale = Vector2( 3.636, 3.241 )
+texture = ExtResource( 6 )
+
+[node name="ArmourLabel" type="Label" parent="."]
+margin_left = -425.055
+margin_top = -465.317
+margin_right = -377.055
+margin_bottom = -451.317
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0.14902, 0, 0.894118, 1 )
+text = "Armour"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AmmoSprite" type="Sprite" parent="."]
+position = Vector2( -789.256, -447.632 )
+scale = Vector2( 1.991, 1.935 )
+texture = ExtResource( 8 )
+
+[node name="AmmoLabel" type="Label" parent="."]
+margin_left = -767.0
+margin_top = -464.0
+margin_right = -724.0
+margin_bottom = -450.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0.796078, 0.607843, 0.101961, 1 )
+text = "Ammo"
+__meta__ = {
+"_edit_use_anchors_": false
+}

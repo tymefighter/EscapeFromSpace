@@ -12,23 +12,23 @@ var health = 1400
 var armour = 0
 
 # Animation player variable
-onready var animationPlayer = get_node("PlayerRight/AnimationPlayer")
+onready var animationPlayer : AnimationPlayer = \
+	get_node("PlayerRight/AnimationPlayer")
+
+# Labels owned by the player
+onready var health_label : Label = get_node("HealthLabel")
+onready var ammo_label : Label = get_node("AmmoLabel")
+onready var armour_label : Label = get_node("ArmourLabel")
 
 func _process(delta):
-	var health_label = get_node("HealthLabel")
-	if health_label != null:
-		health_label.text = str(health)
-		
-	var ammo_label = get_node("AmmoLabel")
-	if ammo_label != null:
-		if weapon != null:
-			ammo_label.text = str(weapon.ammo)
-		else:
-			ammo_label.text = "0"
+	
+	if weapon != null:
+		ammo_label.text = str(weapon.get_ammo())
+	else:
+		ammo_label.text = "0"
 			
-	var armour_label = get_node("ArmourLabel")
-	if armour_label != null:
-		armour_label.text = str(armour)
+	health_label.text = str(health)
+	armour_label.text = str(armour)
 		
 	if health <= 0:
 		get_tree().change_scene("res://UI/LoseScreen.tscn")
