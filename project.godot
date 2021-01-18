@@ -19,6 +19,10 @@ config/name="EscapeFromSpace"
 run/main_scene="res://UI/TitleScreen.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalConst="*res://GlobalConst.gd"
+
 [display]
 
 window/size/width=500

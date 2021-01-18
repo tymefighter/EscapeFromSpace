@@ -140,7 +140,8 @@ func shoot(delta):
 		bullet.set_velocity(velocity)
 		
 		curr_gap -= time_gap
-		ammo -= 1
+		if ammo != GlobalConst.INFINITY:
+			ammo -= 1
 
 func update_pos_parent(
 	new_pos_gun_right : Vector2 = Vector2(50, -10),
