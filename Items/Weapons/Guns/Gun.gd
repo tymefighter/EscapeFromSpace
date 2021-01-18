@@ -11,7 +11,7 @@ export var bullet_scale : Vector2 = Vector2(0.5, 0.5) # bullet scale with respec
 export var dist_bullet_gun = 0		# distance between bullet and gun
 export var bullet_speed = 500		# bullet speed
 export var fire_rate = 5 			# bullets per second
-var time_gap = 1.0 / fire_rate
+onready var time_gap = 1.0 / fire_rate
 
 # Position of gun With respect to the parent
 # when the gun is oriented in a specific direction
@@ -152,6 +152,9 @@ func update_pos_parent(
 	pos_gun_left = new_pos_gun_left
 	pos_gun_up = new_pos_gun_up
 	pos_gun_down = new_pos_gun_down
+	
+func get_ammo():
+	return ammo	
 	
 func _on_Area2D_body_entered(body):
 		

@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=2]
+[gd_scene load_steps=79 format=2]
 
 [ext_resource path="res://World/WorldItems/space2.png" type="Texture" id=1]
 [ext_resource path="res://World/WorldItems/space1.png" type="Texture" id=2]
@@ -11,9 +11,6 @@
 [ext_resource path="res://Items/Weapons/Guns/Venom/Venom.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Items/Weapons/Guns/DefaultGun/DefaultGun.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Other/bullet.png" type="Texture" id=12]
-[ext_resource path="res://Other/health.png" type="Texture" id=13]
-[ext_resource path="res://Other/Armour.png" type="Texture" id=14]
 [ext_resource path="res://AI/AIOne/AIOne.tscn" type="PackedScene" id=15]
 [ext_resource path="res://AI/AITwo/AITwo.tscn" type="PackedScene" id=16]
 [ext_resource path="res://AI/AIThree/AIThree.tscn" type="PackedScene" id=17]
@@ -1673,57 +1670,6 @@ scale = Vector2( 0.3, 0.3 )
 [node name="Camera2D" type="Camera2D" parent="YSort/Player"]
 position = Vector2( 0, -0.616913 )
 current = true
-
-[node name="HealthSprite" type="Sprite" parent="YSort/Player"]
-position = Vector2( -629.776, -449.284 )
-scale = Vector2( 2.95708, 2.59545 )
-texture = ExtResource( 13 )
-
-[node name="HealthLabel" type="Label" parent="YSort/Player"]
-margin_left = -593.189
-margin_top = -464.13
-margin_right = -530.189
-margin_bottom = -446.13
-rect_scale = Vector2( 2, 2 )
-custom_colors/font_color = Color( 0.0509804, 0.815686, 0.333333, 1 )
-text = "Health"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="AmmoSprite" type="Sprite" parent="YSort/Player"]
-position = Vector2( -789.256, -447.632 )
-scale = Vector2( 1.99116, 1.93485 )
-texture = ExtResource( 12 )
-
-[node name="AmmoLabel" type="Label" parent="YSort/Player"]
-margin_left = -767.0
-margin_top = -464.0
-margin_right = -704.0
-margin_bottom = -446.0
-rect_scale = Vector2( 2, 2 )
-custom_colors/font_color = Color( 0.890196, 0.721569, 0.054902, 1 )
-text = "Ammo"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ArmourSprite" type="Sprite" parent="YSort/Player"]
-position = Vector2( -457.016, -434.129 )
-scale = Vector2( 3.63559, 3.24138 )
-texture = ExtResource( 14 )
-
-[node name="ArmourLabel" type="Label" parent="YSort/Player"]
-margin_left = -425.055
-margin_top = -465.317
-margin_right = -362.055
-margin_bottom = -447.317
-rect_scale = Vector2( 2, 2 )
-custom_colors/font_color = Color( 0.0862745, 0.0196078, 0.898039, 1 )
-text = "Armour"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="FinalBoss1" parent="YSort" instance=ExtResource( 16 )]
 position = Vector2( 148.108, 403.516 )
