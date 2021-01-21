@@ -38,6 +38,10 @@ while eliminating the aliens to finally escape the spaceship
 <img src="./GithubImages/Lose.gif" width="500">
 <img src="./GithubImages/Win.gif" width="500">
 
+- Following is the complete gameplay in four parts:
+
+<img src="https://imgur.com/a/yMTNPZW.gif"/>
+
 # Repository Information
 
 ## Installation Instructions
