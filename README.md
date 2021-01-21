@@ -40,7 +40,8 @@ while eliminating the aliens to finally escape the spaceship
 
 - Following is the complete gameplay in four parts:
 
-[Imgur](https://imgur.com/3E8EHkW)
+![Imgur Image](https://imgur.com/ya1o5xf.gif)
+![Imgur Image](https://imgur.com/EwJ7tmy.gif)
 
 # Repository Information
 
