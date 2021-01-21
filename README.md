@@ -38,10 +38,9 @@ while eliminating the aliens to finally escape the spaceship
 <img src="./GithubImages/Lose.gif" width="500">
 <img src="./GithubImages/Win.gif" width="500">
 
-- Following is the complete gameplay in four parts:
-
-![Imgur Image](https://imgur.com/ya1o5xf.gif)
-![Imgur Image](https://imgur.com/EwJ7tmy.gif)
+- You can find the complete gameplay video in this
+Google drive link: 
+https://drive.google.com/file/d/1YHezoiuP4zwEHTx-ENNDK73oZok01Ar4/view?usp=sharing
 
 # Repository Information
 
